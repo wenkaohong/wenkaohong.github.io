@@ -205,6 +205,270 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
+                    <h3><a href="/2020/04/14/hexo加入 广告/">hexo加入 广告</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2020-04-14T13:38:55.048Z" itemprop="datePublished">
+          2020-04-14
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        加入 广告主要有两种：百度SSP和谷歌Adsense。方法类似：
+
+注册，复制广告代码
+
+部署到网站。
+2.1. 新建 theme/*/layout/_custom/google_ad.swig，将 AdSense 上的代码粘贴进去
+2.2. 头部。在 theme/*/layout/_custom/head.swig 中也粘贴一份
+2.3. 每篇博客。在 theme/*/layout/post.swig 里中在希望看到的地方加上：
+1 
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2020/04/14/hexo加入 广告/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2020/04/14/hexo部署于github/">hexo部署于github</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2020-04-14T13:38:55.041Z" itemprop="datePublished">
+          2020-04-14
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        方案一：GithubPages
+创建Github账号 
+
+创建仓库， 仓库名为：&lt;Github账号名称&gt;.github.io
+
+将本地Hexo博客推送到GithubPages
+3.1. 先要安装hexo-deployer-git插件。在命令行（即Git Bash）运行以下命令即可：
+
+
+1$ npm install hexo-deployer-git --save
+
+方法一
+3.2. 添加SSH key。
+
+创建一个 SSH
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2020/04/14/hexo部署于github/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2020/04/14/一些hexo插件和其配置/">一些hexo插件和其配置</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2020-04-14T13:38:55.034Z" itemprop="datePublished">
+          2020-04-14
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        插件配置以下插件（评论系统、数据统计与分析、内容分享服务、搜索服务）各选一个即可。
+评论系统
+
+
+
+推荐指数
+优点
+缺点
+
+
+
+Valine
+4
+每天30000条评论，10GB的储存
+作者评论无标识
+
+
+来必力/livere
+4
+多种账号登录
+评论无法导出
+
+
+畅言
+3
+美观
+必须备案域名
+
+
+gitment
+3
+简洁
+只能登陆github评论
+
+
+Disqus
+1
+
+需要翻*墙
+
+
+Valine1.1. 获取APP ID 和 APP 
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2020/04/14/一些hexo插件和其配置/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2020/04/14/创建文章/">创建文章</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2020-04-14T13:38:55.026Z" itemprop="datePublished">
+          2020-04-14
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        创建文章命令：
+1$ hexo new [layout] &lt;title&gt;
+
+参数说明：
+
+[layout]可以为以下三种：
+
+
+
+
+参数名
+功能
+文章路径
+
+
+
+post
+新建博文
+source/_posts
+
+
+page
+新建页面（如404，分类）
+source
+
+
+draft
+草稿
+source/_drafts
+
+
+草稿可通过一下命令发布：
+1$ hexo publish [layout] &lt;title&gt;
+
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2020/04/14/创建文章/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2020/04/14/live2模型hexo/">live2模型hexo</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2020-04-14T13:38:55.019Z" itemprop="datePublished">
+          2020-04-14
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        添加萌萌哒
+安装插件
+1 
+
+
+
+1npm install --save hexo-helper-live2d
+
+复制你喜欢的模型名字：（失效了~）
+Epsilon2.1
+
+Gantzert_Felixander
+haru
+
+miku
+
+将以下代码添加到主题配置文件_config.yml，修改&lt;你喜欢的模型名字&gt;：（最主要还是第一和第二行代码，其他是大小尺寸之类的）
+1234567891011121314151617live
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2020/04/14/live2模型hexo/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
                     <h3><a href="/2020/04/10/四月八号，第一次hexo博客搭建/">四月八号，第一次hexo博客搭建</a></h3>
                     <span>
                         <span class="post-meta">
@@ -219,46 +483,17 @@
                     <p>
                       
                         四月八号，再一次hexo博客搭建
-首先下载好nodejs（包含了nodejs本身和npm这个包管理器）。使用gitbush（管理员权限下实用哦），在里面可以用XXX -V查看版本。再用npm install -g cnpm –registry=https://registry.npm.taobao.org这个淘宝这个完整 npmjs.org 镜像，用此代替官方版本。（因为这个nodejs服务器在国内速度快！官方的在海外速度慢），然后用g
+1、首先下载好nodejs（包含了nodejs本身和npm这个包管理器）。使用gitbush（管理员权限下实用哦），在里面可以用XXX -V查看版本。
+2、先用命令
+1npm install -g hexo-cli    &#x2F;&#x2F;安装hexo框架
+
+3、再用
+1npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.n
                       
                     </p>
                     
                     <p class="pull-right readMore">
                         <a href="/2020/04/10/四月八号，第一次hexo博客搭建/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2020/04/08/四月八号的/">四月八号的</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2020-04-08T14:10:58.000Z" itemprop="datePublished">
-          2020-04-08
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        ##第一章
-嘻嘻
-##第二章
-哈哈哈
-
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2020/04/08/四月八号的/">Read More...</a>
                     </p>
                     
                 </div>

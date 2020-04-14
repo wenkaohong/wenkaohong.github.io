@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+  <title>一些hexo插件和其配置 | Hexo</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Hexo">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" target="_blank" rel="noopener" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" target="_blank" rel="noopener" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Hexo</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2020-04-14T13:38:55.034Z" itemprop="datePublished">
+          2020-04-14
+      </time>
+    
+</span>
+                <h1>一些hexo插件和其配置</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h3><p>以下插件（评论系统、数据统计与分析、内容分享服务、搜索服务）各选一个即可。</p>
+<h4 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h4><table>
+<thead>
+<tr>
+<th></th>
+<th>推荐指数</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a></td>
+<td>4</td>
+<td>每天30000条评论，10GB的储存</td>
+<td>作者评论无标识</td>
+</tr>
+<tr>
+<td><a href="https://livere.com/" target="_blank" rel="noopener">来必力/livere</a></td>
+<td>4</td>
+<td>多种账号登录</td>
+<td>评论无法导出</td>
+</tr>
+<tr>
+<td><a href="http://changyan.kuaizhan.com/" target="_blank" rel="noopener">畅言</a></td>
+<td>3</td>
+<td>美观</td>
+<td>必须备案域名</td>
+</tr>
+<tr>
+<td><a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">gitment</a></td>
+<td>3</td>
+<td>简洁</td>
+<td>只能登陆github评论</td>
+</tr>
+<tr>
+<td>Disqus</td>
+<td>1</td>
+<td></td>
+<td>需要翻*墙</td>
+</tr>
+</tbody></table>
+<h5 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h5><p>1.1. 获取APP ID 和 APP Key</p>
+<p>请先登录或注册 <a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>, 进入控制台后点击左下角创建应用，</p>
+<p>进入刚刚创建的应用，选择左下角的<code>设置</code>&gt;<code>应用Key</code>，然后就能看到你的<code>APP ID</code>和<code>APP Key</code>了。</p>
+<p>1.2. 填写APP ID 和 APP Key到主题配置文件<code>_config.yml</code></p>
+<p>1.3. 运行<code>hexo g&amp;&amp;hexo d</code>推送到博客。</p>
+<h5 id="来必力-livere"><a href="#来必力-livere" class="headerlink" title="来必力/livere"></a>来必力/livere</h5><p>2.1. 登陆 <a href="https://livere.com/" target="_blank" rel="noopener">来必力</a> 获取你的 LiveRe UID。</p>
+<p>2.2. 填写LiveRe UID到主题配置文件<code>_config.yml</code></p>
+<h5 id="畅言"><a href="#畅言" class="headerlink" title="畅言"></a>畅言</h5><p>3.1.获取APP ID 和 APP Key</p>
+<p>请先登录或注册 <a href="http://changyan.kuaizhan.com/" target="_blank" rel="noopener">畅言</a>, 点击“立即免费获取畅言”，</p>
+<p>新建站点，点击管理，点击评论插件&gt;评论管理，</p>
+<p>点击后台总览，然后就能看到你的<code>APP ID</code>和<code>APP Key</code>了。</p>
+<p>3.2. 填写APP ID 和 APP Key到主题配置文件<code>_config.yml</code></p>
+<p>3.3. 运行<code>hexo g&amp;&amp;hexo d</code>推送到博客。</p>
+<h5 id="gitment"><a href="#gitment" class="headerlink" title="gitment"></a>gitment</h5><p>4.1. 安装插件：</p>
+<blockquote>
+<p>npm i –save gitment</p>
+</blockquote>
+<p>4.2. 申请应用</p>
+<p>在<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">New OAuth App</a>为你的博客应用一个密钥:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Application name:随便写</span><br><span class="line">Homepage URL:这个也可以随意写,就写你的博客地址就行</span><br><span class="line">Application description:描述,也可以随意写</span><br><span class="line">Authorization callback URL:这个必须写你的博客地址</span><br></pre></td></tr></table></figure>
+
+<p>4.3. 配置</p>
+<p>编辑主题配置文件<code>themes/*/_config.yml</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># Gitment</span><br><span class="line"># Introduction: https:&#x2F;&#x2F;imsun.net&#x2F;posts&#x2F;gitment-introduction&#x2F;</span><br><span class="line">gitment:</span><br><span class="line">  enable: true</span><br><span class="line">  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway</span><br><span class="line">  count: true # Show comments count in post meta area</span><br><span class="line">  lazy: false # Comments lazy loading with a button</span><br><span class="line">  cleanly: false # Hide &#39;Powered by ...&#39; on footer, and more</span><br><span class="line">  language: # Force language, or auto switch by theme</span><br><span class="line">  github_user: &#123;you github user id&#125;</span><br><span class="line">  github_repo: 公开的git仓库,评论会作为那个项目的issue</span><br><span class="line">  client_id: &#123;刚才申请的ClientID&#125;</span><br><span class="line">  client_secret: &#123;刚才申请的Client Secret&#125;</span><br><span class="line">  proxy_gateway: # Address of api proxy, See: https:&#x2F;&#x2F;github.com&#x2F;aimingoo&#x2F;intersect</span><br><span class="line">  redirect_protocol: # Protocol of redirect_uri with force_redirect_pro</span><br></pre></td></tr></table></figure>
+
+<h5 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h5><p>编辑 主题配置文件<code>themes/*/_config.yml</code>， 将 disqus 下的 enable 设定为 true，同时提供您的 shortname。count 用于指定是否显示评论数量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">disqus:</span><br><span class="line">  enable: false</span><br><span class="line">  shortname:</span><br><span class="line">  count: true</span><br></pre></td></tr></table></figure>
+
+<h4 id="数据统计与分析"><a href="#数据统计与分析" class="headerlink" title="数据统计与分析"></a>数据统计与分析</h4><table>
+<thead>
+<tr>
+<th></th>
+<th>推荐指数</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a></td>
+<td>4</td>
+<td>可直接将访问次数显示在您在网页上（也可不显示）</td>
+<td>只计数</td>
+</tr>
+<tr>
+<td>百度统计</td>
+<td>3</td>
+<td></td>
+<td>收录慢</td>
+</tr>
+</tbody></table>
+<h5 id="不蒜子"><a href="#不蒜子" class="headerlink" title="不蒜子"></a>不蒜子</h5><p>编辑 主题配置文件 <code>themes/*/_config.yml</code>中的<code>busuanzi_count</code>的配置项即可。</p>
+<ul>
+<li>当<code>enable: true</code>时，代表开启全局开关。</li>
+<li>若<code>site_uv</code>（本站访客数）、<code>site_pv</code>（本站访客数）、<code>page_pv</code>（本文总阅读量）的值均为<code>false</code>时，不蒜子仅作记录而不会在页面上显示。</li>
+</ul>
+<p>注意：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">不蒜子官方因七牛强制过期原有的『dn-lbstatics.qbox.me』域名（预计2018年10月初），与客服沟通数次无果，即使我提出为此付费也不行，只能更换域名到『busuanzi.ibruce.info』！</span><br></pre></td></tr></table></figure>
+
+<p>解决办法：</p>
+<ol>
+<li><p>找到主题调用不蒜子的swig文件。一般在”\themes*\layout_third-party\analytics\busuanzi-counter.swig”</p>
+</li>
+<li><p>更改域名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
+</li>
+<li><pre><code>把原有的：
+&lt;script async src=&quot;//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;
+域名改一下即可：
+&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##### 百度统计</span><br><span class="line"></span><br><span class="line">1. 登录 [百度统计](http:&#x2F;&#x2F;tongji.baidu.com&#x2F;)，定位到站点的代码获取页面</span><br><span class="line">2. 复制统计脚本 id，如图：</span><br><span class="line">   ​         [![img](http:&#x2F;&#x2F;theme-next.iissnan.com&#x2F;uploads&#x2F;five-minutes-setup&#x2F;analytics-baidu-id.png)](http:&#x2F;&#x2F;theme-next.iissnan.com&#x2F;uploads&#x2F;five-minutes-setup&#x2F;analytics-baidu-id.png)       </span><br><span class="line">3. 编辑 主题配置文件&#96;themes&#x2F;*&#x2F;_config.yml&#96;，修改字段 &#96;google_analytics&#96;，值设置成你的统计脚本 id。</span><br><span class="line"></span><br><span class="line">#### 内容分享服务</span><br><span class="line"></span><br><span class="line">|                                                              | 推荐指数 | 优点 | 缺点                          |</span><br><span class="line">| ------------------------------------------------------------ | -------- | ---- | ----------------------------- |</span><br><span class="line">| [百度分享](http:&#x2F;&#x2F;share.baidu.com&#x2F;)                          | 4        | 稳定 | 不太美观                      |</span><br><span class="line">| [need-more-share2](https:&#x2F;&#x2F;github.com&#x2F;revir&#x2F;need-more-share2) | 4        | 美观 | 更新不及时（比如微信分享API） |</span><br><span class="line"></span><br><span class="line">##### 百度分享</span><br><span class="line"></span><br><span class="line">编辑 主题配置文件，添加&#x2F;修改字段 &#96;baidushare&#96;，值为 &#96;true&#96;即可。</span><br></pre></td></tr></table></figure>
+</code></pre></li>
+</ol>
+<h1 id="百度分享服务"><a href="#百度分享服务" class="headerlink" title="百度分享服务"></a>百度分享服务</h1><p>baidushare: true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##### need-more-share2</span><br><span class="line"></span><br><span class="line">编辑 主题配置文件，添加&#x2F;修改字段 &#96;needmoreshare2&#96;，值为 &#96;true&#96;即可。</span><br></pre></td></tr></table></figure>
+
+<p>needmoreshare2:<br>  enable: true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 搜索服务</span><br><span class="line"></span><br><span class="line">|              | 推荐指数 | 优点     | 缺点   |</span><br><span class="line">| ------------ | -------- | -------- | ------ |</span><br><span class="line">| Local Search | 4        | 配置方便 |        |</span><br><span class="line">| Swiftype     | 2        |          | 需注册 |</span><br><span class="line">| Algolia      | 2        |          | 需注册 |</span><br><span class="line"></span><br><span class="line">##### Local Search</span><br><span class="line"></span><br><span class="line">添加百度&#x2F;谷歌&#x2F;本地 自定义站点内容搜索</span><br><span class="line"></span><br><span class="line">1. 安装 &#96;hexo-generator-searchdb&#96;，在站点的根目录下执行以下命令：</span><br></pre></td></tr></table></figure>
+
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>$ npm install hexo-generator-searchdb –save</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">编辑 站点配置文件，新增以下内容到任意位置：</span><br></pre></td></tr></table></figure>
+
+<p>search:<br>  path: search.xml<br>  field: post<br>  format: html<br>  limit: 10000</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">编辑 主题配置文件，启用本地搜索功能：</span><br></pre></td></tr></table></figure>
+
+<h1 id="Local-search"><a href="#Local-search" class="headerlink" title="Local search"></a>Local search</h1><p>local_search:<br>  enable: true<br>```</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/2020/04/14/hexo%E9%83%A8%E7%BD%B2%E4%BA%8Egithub/" style="float: left;">
+        ← hexo部署于github
+    </a>
+    
+    
+    <a class="pull-right" href="/2020/04/14/%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0/">
+        创建文章 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By John Doe. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" target="_blank" rel="noopener" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

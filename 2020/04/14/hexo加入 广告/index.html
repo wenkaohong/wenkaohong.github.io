@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>四月八号的 | Hexo</title>
+  <title>hexo加入 广告 | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -173,32 +173,42 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2020-04-08T14:10:58.000Z" itemprop="datePublished">
-          2020-04-08
+      <time datetime="2020-04-14T13:38:55.048Z" itemprop="datePublished">
+          2020-04-14
       </time>
     
 </span>
-                <h1>四月八号的</h1>
+                <h1>hexo加入 广告</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>##第一章</p>
-<p>嘻嘻</p>
-<p>##第二章</p>
-<p>哈哈哈</p>
+      		<h5 id="加入-广告"><a href="#加入-广告" class="headerlink" title="加入 广告"></a>加入 广告</h5><p>主要有两种：<a href="https://ssp.baidu.com/static/register.html" target="_blank" rel="noopener">百度SSP</a>和<a href="https://www.google.com/adsense/start/#/?modal_active=none" target="_blank" rel="noopener">谷歌Adsense</a>。方法类似：</p>
+<ol>
+<li><p>注册，复制广告代码</p>
+</li>
+<li><p>部署到网站。</p>
+<p>2.1. 新建 <code>theme/*/layout/_custom/google_ad.swig</code>，将 AdSense 上的代码粘贴进去</p>
+<p>2.2. 头部。在 <code>theme/*/layout/_custom/head.swig</code> 中也粘贴一份</p>
+<p>2.3. 每篇博客。在 <code>theme/*/layout/post.swig</code> 里中在希望看到的地方加上：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include &#39;_custom&#x2F;google_ad.swig&#39; %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例如：在 <code></code> 中间插入，总代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;% block content %&#125;</span><br><span class="line">  &lt;div id&#x3D;&quot;posts&quot; class&#x3D;&quot;posts-expand&quot;&gt;</span><br><span class="line">    &#123;&#123; post_template.render(page) &#125;&#125;</span><br><span class="line">    &#123;% include &#39;_custom&#x2F;google_ad.swig&#39; %&#125;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>等待审核通过。如果失败，可再次申请。</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2020/04/10/%E5%9B%9B%E6%9C%88%E5%85%AB%E5%8F%B7%EF%BC%8C%E7%AC%AC%E4%B8%80%E6%AC%A1hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="float: left;">
-        ← 四月八号，第一次hexo博客搭建
-    </a>
     
-    
-    <a class="pull-right" href="/2020/04/08/hello-world/">
-        Hello World →
+    <a class="pull-right" href="/2020/04/14/hexo%E9%83%A8%E7%BD%B2%E4%BA%8Egithub/">
+        hexo部署于github →
     </a>
     
 </nav>
